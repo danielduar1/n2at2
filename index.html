@@ -21,6 +21,37 @@
         border: 2px solid #ccc;
         /* Opcional: borda ao redor */
     }
+    body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+    }
+    .dark-mode .card,
+    .dark-mode .modal-content,
+    .dark-mode .form-control,
+    .dark-mode .list-group-item {
+        background-color: #1e1e1e;
+        color: #f1f1f1;
+        border-color: #444;
+    }
+
+    .dark-mode .btn-outline-dark {
+        color: #f1f1f1;
+        border-color: #f1f1f1;
+    }
+
+    .dark-mode .btn-outline-dark:hover {
+        background-color: #f1f1f1;
+        color: #121212;
+    }
+
+    .dark-mode .nav-link {
+        color: #ddd !important;
+    }
+
+    .dark-mode .modal-header,
+    .dark-mode .modal-footer {
+        border-color: #444;
+    }
 </style>
 
 <body>
@@ -34,6 +65,8 @@
                 <li><a href="#equipe" class="nav-link px-2">Equipe</a></li>
                 <li><a href="#" class="nav-link px-2">Projetos</a></li>
                 <li><a href="#contato" class="nav-link px-2">Contato</a></li>
+                <li class="nav-item">
+                <li><button id="toggleMode" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">🌙</button></li>                
             </ul>
         </header>
     </div>
@@ -181,7 +214,6 @@
             </ul>
             <p class="text-center text-body-secondary">© 2025 Nome da Empresa</p>
         </footer>
-    <button onclick="localStorage.removeItem('visitouSite'); location.reload();" class="btn btn-sm btn-outline-secondary mt-3">Testar Boas-Vindas</button>
     </div>
     <!--MODAL DO BEM-VINDO-->
     <div class="modal" tabindex="-1" id="boasVindas">
@@ -202,6 +234,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script>
+        //Adiciona um evento APÓS o carregamento inicial da página e mostra o DOM, caso nunca tenha mostrado.
         document.addEventListener("DOMContentLoaded", function () {
         if (!localStorage.getItem("visitouSite")) {
             const modalElement = document.getElementById('boasVindas');
@@ -209,7 +242,27 @@
             modal.show();
             localStorage.setItem("visitouSite", "true");
         }
-    });
+        });
+        // Aplica o tema salvo, se houver
+        document.addEventListener("DOMContentLoaded", function () {
+            const temaSalvo = localStorage.getItem("modo");
+            if (temaSalvo === "escuro") {
+            document.body.classList.add("dark-mode");
+            document.getElementById("toggleMode").innerText = "☀️";
+            }
+        });
+
+        // Alterna o modo ao clicar no botão
+        document.getElementById("toggleMode").addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+            const isEscuro = document.body.classList.contains("dark-mode");
+
+            // Atualiza ícone
+            this.innerText = isEscuro ? "☀️" : "🌙";
+
+            // Salva preferência
+            localStorage.setItem("modo", isEscuro ? "escuro" : "claro");
+        });
     </script>
 </body>
 
