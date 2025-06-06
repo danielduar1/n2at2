@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
     <title>Projetos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--HEADER-->
     <div class="container mb-3">
-        <header
-            class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 flex-column flex-md-row">
+        <header class="d-flex flex-wrap align-items-center justify-content-between pt-2 mb-4 flex-column flex-md-row">
             <!-- Logo à esquerda -->
             <a href="index.html" class="d-flex align-items-center mb-2 mb-md-0 text-dark text-decoration-none">
-                <img src="devteam_logo.png" alt="Logo DevTeam" width="100" height="83" class="me-2">
+                <img src="devteam_logo.png" alt="Logo DevTeam" width="73" height="60" class="me-2">
             </a>
 
             <!-- Navegação centralizada -->
@@ -35,6 +36,55 @@
                     style="width: 40px; height: 40px;">🌙</button>
             </div>
         </header>
+    </div>
+    <!--CAROUSEL PARA ULTIMOS PROJETOS-->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators"> 
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="btn-color" aria-label="Slide 1"></button> 
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="btn-color"></button> 
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="btn-color active" aria-current="true"></button> 
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item"> 
+                <img src="carousel_example.png" class="d-block w-100 h-100 object-fit-cover" style="position: absolute; top: 0; left: 0; z-index: -1;" alt="imagem do ultimo projeto realizado">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="carousel-caption text-start" style="z-index: 2;">
+                        <h1>Último Projeto</h1>
+                        <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae recusandae nihil alias sit qui ipsam assumenda sapiente. Voluptatibus culpa distinctio modi quam asperiores aliquid optio fugiat unde iusto fugit.</p>
+                        <p><a class="btn btn-lg btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal-ultimo-projeto">Ver Mais</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item"> 
+                <img src="carousel_example.png" class="d-block w-100 h-100 object-fit-cover" style="position: absolute; top: 0; left: 0; z-index: -1;" alt="imagem do penultimo projeto realizado">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="carousel-caption text-start">
+                        <h1>Penultimo projeto</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores illum placeat harum accusamus, eligendi perspiciatis voluptatibus fuga repellat corrupti a blanditiis qui quae non corporis ducimus velit et sapiente perferendis.</p>
+                        <p><a class="btn btn-lg btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal-penultimo-projeto">Saiba mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active"> 
+                <img src="carousel_example.png" class="d-block w-100 h-100 object-fit-cover" style="position: absolute; top: 0; left: 0; z-index: -1;" alt="imagem do projeto em destaque">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Projeto em destaque</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus corporis iusto cum quae! Nam, sint incidunt iure autem temporibus rem, ex obcaecati reprehenderit voluptates alias veritatis illo assumenda vero?</p>
+                        <p><a class="btn btn-lg btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal-destaque-projeto">Descubra</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                class="visually-hidden">Previous</span> </button> <button class="carousel-control-next" type="button"
+            data-bs-target="#myCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon"
+                aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
     </div>
     <!--PROJETOS-->
     <div class="container mb-3" id="equipe">
@@ -59,13 +109,13 @@
                         <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                             quia. Nostrum dolores cumque culpa tempora ad, aliquam odit reiciendis excepturi, rerum
                             doloribus exercitationem aliquid eveniet id, tenetur sunt velit dicta?</li>
-                            <!-- Button trigger modal -->
+                        <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#modal-projeto-1">
                             Ver Mais
                         </button>
                     </ul>
-                    
+
                 </div>
             </div>
             <!-- Card 2 -->
@@ -81,13 +131,13 @@
                         <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                             quia. Nostrum dolores cumque culpa tempora ad, aliquam odit reiciendis excepturi, rerum
                             doloribus exercitationem aliquid eveniet id, tenetur sunt velit dicta?</li>
-                            <!-- Button trigger modal -->
+                        <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#modal-projeto-2">
                             Ver Mais
                         </button>
                     </ul>
-                    
+
                 </div>
             </div>
             <!-- Card 3 -->
@@ -103,13 +153,13 @@
                         <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                             quia. Nostrum dolores cumque culpa tempora ad, aliquam odit reiciendis excepturi, rerum
                             doloribus exercitationem aliquid eveniet id, tenetur sunt velit dicta?</li>
-                            <!-- Button trigger modal -->
+                        <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#modal-projeto-3">
                             Ver Mais
                         </button>
                     </ul>
-                    
+
                 </div>
             </div>
             <!-- Card 4 -->
@@ -125,13 +175,13 @@
                         <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                             quia. Nostrum dolores cumque culpa tempora ad, aliquam odit reiciendis excepturi, rerum
                             doloribus exercitationem aliquid eveniet id, tenetur sunt velit dicta?</li>
-                            <!-- Button trigger modal -->
+                        <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#modal-projeto-4">
                             Ver Mais
                         </button>
                     </ul>
-                    
+
                 </div>
             </div>
         </div>
@@ -145,7 +195,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores eligendi iure?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet
+                        reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda
+                        quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae
+                        libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni
+                        nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis
+                        maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus
+                        voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores
+                        eligendi iure?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -161,7 +221,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores eligendi iure?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet
+                        reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda
+                        quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae
+                        libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni
+                        nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis
+                        maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus
+                        voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores
+                        eligendi iure?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -177,7 +247,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores eligendi iure?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet
+                        reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda
+                        quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae
+                        libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni
+                        nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis
+                        maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus
+                        voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores
+                        eligendi iure?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -193,7 +273,95 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores eligendi iure?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet
+                        reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda
+                        quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae
+                        libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni
+                        nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis
+                        maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus
+                        voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores
+                        eligendi iure?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="modal-ultimo-projeto">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Último Projeto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet
+                        reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda
+                        quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae
+                        libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni
+                        nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis
+                        maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus
+                        voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores
+                        eligendi iure?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="modal-penultimo-projeto">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Penúltimo Projeto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet
+                        reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda
+                        quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae
+                        libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni
+                        nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis
+                        maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus
+                        voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores
+                        eligendi iure?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="modal-destaque-projeto">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto em Destaque</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto eveniet
+                        reiciendis voluptas officiis distinctio ducimus similique neque? Cupiditate incidunt assumenda
+                        quidem iste commodi ut maiores molestias debitis neque laborum. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellendus consequuntur placeat similique provident, fugit vitae
+                        libero praesentium exercitationem laboriosam ipsa veritatis nostrum explicabo? Impedit, magni
+                        nisi aliquam ipsa deleniti adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Rerum pariatur tempore reprehenderit molestiae ea perspiciatis quo expedita ipsa quae reiciendis
+                        maiores ducimus, nam eaque aut dolorum minima sequi laudantium iure. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Enim, ex esse id possimus voluptatibus sint soluta delectus
+                        voluptas quam deserunt nesciunt laudantium corrupti. Commodi ut amet inventore asperiores
+                        eligendi iure?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -215,27 +383,27 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script>
-    // Aplica o tema salvo, se houver
-    document.addEventListener("DOMContentLoaded", function () {
-        const temaSalvo = localStorage.getItem("modo");
-        const botao = document.getElementById("toggleMode");
+        // Aplica o tema salvo, se houver
+        document.addEventListener("DOMContentLoaded", function () {
+            const temaSalvo = localStorage.getItem("modo");
+            const botao = document.getElementById("toggleMode");
 
-        if (temaSalvo === "escuro") {
-            document.body.classList.add("dark-mode");
-            if (botao) botao.innerText = "☀️";
-        }
+            if (temaSalvo === "escuro") {
+                document.body.classList.add("dark-mode");
+                if (botao) botao.innerText = "☀️";
+            }
 
-        // Só adiciona o evento se o botão existir
-        if (botao) {
-            botao.addEventListener("click", function () {
-                document.body.classList.toggle("dark-mode");
-                const isEscuro = document.body.classList.contains("dark-mode");
-                this.innerText = isEscuro ? "☀️" : "🌙";
-                localStorage.setItem("modo", isEscuro ? "escuro" : "claro");
-            });
-        }
-    });
-</script>
+            // Só adiciona o evento se o botão existir
+            if (botao) {
+                botao.addEventListener("click", function () {
+                    document.body.classList.toggle("dark-mode");
+                    const isEscuro = document.body.classList.contains("dark-mode");
+                    this.innerText = isEscuro ? "☀️" : "🌙";
+                    localStorage.setItem("modo", isEscuro ? "escuro" : "claro");
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
