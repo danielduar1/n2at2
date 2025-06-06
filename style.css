@@ -1,0 +1,100 @@
+ body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F4F6F8;
+            color: #1E2A38;
+        }
+
+
+
+        .nav-link,
+        footer p,
+        .nav-item a {
+            color: #1E2A38 !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-item a:hover {
+            color: #3F8CFF !important;
+        }
+
+        .btn-primary {
+            background-color: #3F8CFF;
+            border-color: #3F8CFF;
+        }
+
+        .btn-primary:hover {
+            background-color: #2c6dd8;
+            border-color: #2c6dd8;
+        }
+
+        .btn-outline-dark {
+            border-color: #3F8CFF;
+            color: #3F8CFF;
+        }
+
+        .btn-outline-dark:hover {
+            background-color: #3F8CFF;
+            color: white;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .round-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        .dark-mode .card,
+        .dark-mode .modal-content,
+        .dark-mode .form-control,
+        .dark-mode .list-group-item {
+            background-color: #1e1e1e;
+            color: #f1f1f1;
+            border-color: #444;
+        }
+
+        .dark-mode .btn-outline-dark {
+            color: #f1f1f1;
+            border-color: #f1f1f1;
+        }
+
+        .dark-mode .btn-outline-dark:hover {
+            background-color: #f1f1f1;
+            color: #121212;
+        }
+
+        .dark-mode .nav-link {
+            color: #ddd !important;
+        }
+
+        .dark-mode .nav-link:hover {
+            color: #3F8CFF !important;
+        }
+
+        .dark-mode .modal-header,
+        .dark-mode .modal-footer {
+            border-color: #444;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(63, 140, 255, 0.3);
+        }
+
+        .welcome-card {
+            background-color: #1e2a38;
+            color: #ffffff;
+        }
